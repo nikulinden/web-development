@@ -1,0 +1,25 @@
+/*https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators  */
+
+h1, h2 {
+    color: blueviolet;
+}
+
+/* child combinator */
+.box > p{
+    color: firebrick;
+}
+
+/* Descendant combinator */
+.box li{
+    color: blue;
+}
+/* chaning method */
+
+li.done{
+    color: seagreen;
+}
+
+/* combining combinations */
+ul p.done{
+    font-size: 0.5rem;
+}
