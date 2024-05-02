@@ -1,0 +1,39 @@
+
+body{
+  background-color: black;
+}
+
+div img{
+    max-width: 100%;
+    display: block;
+    border: 10px solid #F7F6BB;
+
+}
+
+div {
+    width: 50%;
+    padding: 30px;
+    margin-left: 25%;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 15%;
+}
+
+p{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-right: 22%;
+}
+
+hr{
+    margin-right: 22%;
+    color: gold;
+}
