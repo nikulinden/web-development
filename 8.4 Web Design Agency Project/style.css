@@ -7,7 +7,29 @@ body {
   min-height: 95vh;
 }
 .main {
+  display: inline;
   flex: 1;
+}
+
+.tile-image{
+  height: 300px;
+  width: 400px;
+}
+
+img{
+  float: left;
+}
+
+.right-card {
+  float: right;
+  display: inline;
+  flex: 0.5;
+}
+
+.left-card {
+  float: left;
+  display: inline;
+  flex: .05;
 }
 
 h1 {
