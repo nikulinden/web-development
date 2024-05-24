@@ -8,34 +8,52 @@ var audio_l = new Audio('./sounds/tom-4.mp3');
 
 for (var i = 0; i<document.querySelectorAll(".drum").length; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
-        var buttonInnerHTML=this.innerHTML;
-        switch(buttonInnerHTML) {
-            case "w":
-                audio_w.play();
-                break;
-            case "a":
-                audio_a.play();
-                break;
-            case "s":
-                audio_s.play();
-                break;
-            case "d":
-                audio_d.play();
-                break;
-            case "j":
-                audio_j.play();
-                break;
-            case "k":
-                audio_k.play();
-                break;
-            case "l":
-                audio_l.play();
-                break;
-            
-            default: console.log(buttonInnerHTML);
+        var buttonInnerHTML = this.innerHTML;
+        makeSound(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML);
 
-        }
+
     });
-
 }
-all_audio[i].play();
+
+document.addEventListener("keydown", function(event) {
+    makeSound(event.key);
+    buttonAnimation(event.key);
+});
+
+function makeSound(key){
+    switch(key) {
+        case "w":
+            audio_w.play();
+            break;
+        case "a":
+            audio_a.play();
+            break;
+        case "s":
+            audio_s.play();
+            break;
+        case "d":
+            audio_d.play();
+            break;
+        case "j":
+            audio_j.play();
+            break;
+        case "k":
+            audio_k.play();
+            break;
+        case "l":
+            audio_l.play();
+            break;
+        
+        default: console.log(buttonInnerHTML);
+
+    }
+}
+
+function buttonAnimation(currentKey){
+    var activeButton = document.querySelector("." + currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    }, 200)
+}
