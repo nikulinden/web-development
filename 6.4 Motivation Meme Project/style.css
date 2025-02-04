@@ -4,9 +4,9 @@ body{
 }
 
 div img{
-    max-width: 100%;
+    width: 100%;
     display: block;
-    border: 10px solid #F7F6BB;
+    border: 5px solid #F7F6BB;
 
 }
 
@@ -23,17 +23,24 @@ h1{
     font-size: 90px;
     text-transform: uppercase;
     color: white;
-    margin-left: 15%;
+    margin: 2px 22%;
+}
+
+ul{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 2 22%;
 }
 
 p{
     font-size: 30px;
     color: white;
     text-align: center;
-    margin-right: 22%;
+    margin: 2 22%;
 }
 
 hr{
-    margin-right: 22%;
+    margin: 0 22%;
     color: gold;
 }
