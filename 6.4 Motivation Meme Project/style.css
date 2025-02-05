@@ -23,24 +23,29 @@ h1{
     font-size: 90px;
     text-transform: uppercase;
     color: white;
-    margin: 2px 22%;
+    margin: 2px 25%;
 }
 
-ul{
+/* ol{
     font-size: 30px;
     color: white;
     text-align: center;
-    margin: 2 22%;
-}
+    margin: 2 25%;
+} */
 
 p{
     font-size: 30px;
     color: white;
     text-align: center;
-    margin: 2 22%;
+    margin: 0 25%;
 }
 
 hr{
     margin: 0 22%;
     color: gold;
 }
+  
+/* li {
+list-style-position: inside; /* This will move the bullet points inside the list item 
+} 
+*/
