@@ -13,7 +13,7 @@ h1, h2 {
 .box li{
     color: blue;
 }
-/* chaning method */
+/* chaining method */
 
 li.done{
     color: seagreen;
