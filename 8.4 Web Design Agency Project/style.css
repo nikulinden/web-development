@@ -6,31 +6,90 @@ body {
   flex-direction: column;
   min-height: 95vh;
 }
-.main {
-  display: inline;
-  flex: 1;
-}
 
-.tile-image{
-  height: 300px;
-  width: 400px;
-}
+@media (max-width:767px){
+  .main {
+    flex: 1;
+    display: block;
+  }
+  div {
+    margin: 20px 0;
+  }
+  .tile-image {
+    float: left;
+    height: 1 rem;
+    width: 1 rem;
+    margin-bottom: 20px;
+  }
+  
+  .left.card{
+    width: 100%;
+  }
 
-img{
+  .right.card{
+    width: 100%;
+  }
+
+  p{
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+  }
+  }
+
+@media (width >= 768px) and (width <= 1024px){
+  .main {
+    flex: 1;
+    display: inline-block;
+  }
+  div {
+    margin: 20px 0;
+  }
+  .tile-image {
+    height: 250px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+.left.card{
   float: left;
+  width: 50%;
 }
 
-.right-card {
+.right.card{
   float: right;
-  display: inline;
-  flex: 0.5;
+  width: 50%;
+}
 }
 
-.left-card {
-  float: left;
-  display: inline;
-  flex: .05;
+@media (width >= 1025px){
+  .main {
+    flex: 1;
+    display: inline-block;
+  }
+  div {
+    margin: 20px 0;
+  }
+  .tile-image {
+    float: left;
+    height: 250px;
+    width: 300px;
+    margin-right: 20px;
+  }
+  
+  .left.card{
+    float: left;
+    width: 50%;
+  }
+
+  .right.card{
+    float: right;
+    width: 50%;
+  }
 }
+
 
 h1 {
   font-size: 5rem;
